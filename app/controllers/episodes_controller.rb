@@ -4,4 +4,8 @@ class EpisodesController < ApplicationController
     @episodes = Episode.all
   end
 
+  def new
+    @episode = Episode.new
+  end
+
 end
