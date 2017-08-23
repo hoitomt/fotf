@@ -1,1 +1,11 @@
-<h1>Welcome to Flight of The Fallingstar</h1>
+  <% @episodes.each do |episode| %>
+        <div class="col-md-4">
+          <div class="episode-box">
+            <h1><%= episode.name %></h1><br />
+            <p><%= episode.description %></p><br />
+            <i><%= episode.date %></i><br />
+          </div>
+        </div>
+      </div>
+      <hr />
+  <% end %>

@@ -1,0 +1,58 @@
+@import "bootstrap";
+@import url('https://fonts.googleapis.com/css?family=Arapey|Cormorant+Garamond|Crimson+Text|Dosis|EB+Garamond|Encode+Sans+Semi+Condensed|Gentium+Basic');
+
+
+
+h1, h2, h3, h4, h5, h6 {
+  margin:0;
+  padding:0;
+}
+body {
+  background: image_url('nightsky.jpg');
+}
+p {
+  font-family: 'Cormorant Garamond', sans-serif;
+  font-size: 18px;
+}
+i {
+  font-family: 'Cormorant Garamond', sans-serif;
+  font-size: 20px;
+}
+h1 {
+  font-family: 'Encode Sans Semi Condensed', sans-serif;
+  font-size: 32px;
+}
+.navbar {
+  background: image_url('noisy_net.png');
+}
+.navbar a {
+  color: white;
+}
+.navbar-brand {
+  font-family: 'Encode Sans Semi Condensed', sans-serif;
+  font-size: 32px;
+}
+.nav-link {
+  font-family: 'Encode Sans Semi Condensed', sans-serif;
+}
+.episode-box {
+  -moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
+  -webkit-box-shadow: 1px 1px 2px 0 #d0d0d0;
+  box-shadow: 1px 1px 2px 0 #d0d0d0;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 20px;
+  height: 400px;
+}
+.col-md-4 {
+  float: left;
+}
+.clear {
+  clear: both;
+}
+hr {
+  display: none;
+}
