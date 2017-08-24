@@ -1,1 +1,10 @@
-<h1>Time to Write!</h1>
+<div class="episode-box col-10 offset-1">
+<h1>New Story</h1>
+<%= simple_form_for @story do |f| %>
+  <%= f.input :title %>
+  <%= f.input :body %>
+  <%= f.input :author %>
+  <br />
+  <%= f.submit 'Create', class: 'btn btn-primary' %>
+<% end %>
+</div>

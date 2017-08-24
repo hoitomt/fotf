@@ -1,1 +1,10 @@
-<h1>Here is where the pictures go.</h1>
+<div class="form-box col-10 offset-1">
+<h1>New Illustration</h1>
+<%= simple_form_for @illustration do |f| %>
+  <%= f.input :caption %>
+  <br />
+  <%= f.submit 'Create', class: 'btn btn-primary' %>
+<% end %>
+
+
+</div>
