@@ -8,5 +8,8 @@ class IllustrationsController < ApplicationController
     @illustration = Illustration.new
   end
 
+  def create
+    @illustration = Illustration.new
+  end
 
 end
