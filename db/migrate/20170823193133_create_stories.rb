@@ -6,5 +6,6 @@ class CreateStories < ActiveRecord::Migration[5.0]
       t.string :author
       t.timestamps
     end
+    add_index :stories, :episode_id
   end
 end
