@@ -7,90 +7,23 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
+  <body>
+    <nav class="navbar navbar-light bg-light justify-content-center">
+      <%= link_to 'Flight of the Fallingstar', root_path, class: "navbar-brand" %>
+    </nav>
 
-  
-
-<nav class="navbar navbar-light bg-light justify-content-center">
-  <a class="navbar-brand" href='#'>Flight of The Fallingstar</a>
-</nav> 
-
-
-<ul class="nav justify-content-center">
-  <li class="nav-item">
-    <%= link_to 'Stories', stories_path, class: 'nav-link' %>
-  </li>
-  <li class="nav-item">
-    <%= link_to 'Illustrations', new_illustration_path, class: 'nav-link' %>
-  </li>
-  <li class="nav-item">
-    <%= link_to 'Reviews', '#', class: 'nav-link' %>
-  </li>
-</ul>
-
-<div class="card-deck">
-  <div class="card">
-    <div class="card-body">
-      <h4 class="card-title">Name</h4> <!-- Episode title goes here (:name) -->
-      <p class="card-text">Description</p> <!-- Episode description goes here (:description) -->
-    </div>
-    <div class="card-footer">
-      <small class="text-muted">Date</small> <!-- Episode date goes here -->
-    </div>
-  </div>
-  <div class="card">
-    <div class="card-body">
-      <h4 class="card-title">Card title</h4>
-      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-    </div>
-    <div class="card-footer">
-      <small class="text-muted">Last updated 3 mins ago</small>
-    </div>
-  </div>
-  <div class="card">
-    <div class="card-body">
-      <h4 class="card-title">Card title</h4>
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-    </div>
-    <div class="card-footer">
-      <small class="text-muted">Last updated 3 mins ago</small>
-    </div>
-  </div>
-  </div>
-
-  <div class="card-deck">
-    <div class="card">
-        <div class="card-body">
-          <h4 class="card-title">Card title</h4>
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-        </div>
-        <div class="card-footer">
-          <small class="text-muted">Last updated 3 mins ago</small>
-        </div>
-    </div>
-  <div class="card">
-      <div class="card-body">
-        <h4 class="card-title">Card title</h4>
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-      </div>
-      <div class="card-footer">
-        <small class="text-muted">Last updated 3 mins ago</small>
-      </div>
-    </div>
-  <div class="card">
-      <div class="card-body">
-        <h4 class="card-title">Card title</h4>
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-      </div>
-      <div class="card-footer">
-        <small class="text-muted">Last updated 3 mins ago</small>
-      </div>
-  </div>
-</div>
-
-
+    <ul class="nav justify-content-center">
+      <li class="nav-item">
+        <%= link_to 'Stories', stories_path, class: 'nav-link' %>
+      </li>
+      <li class="nav-item">
+        <%= link_to 'Illustrations', illustrations_path, class: 'nav-link' %>
+      </li>
+      <li class="nav-item">
+        <%= link_to 'Reviews', '#', class: 'nav-link' %>
+      </li>
+    </ul>
     <br class="clear" />
-
-
     <%= yield %>
   </body>
 </html>
